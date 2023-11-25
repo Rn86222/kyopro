@@ -3,7 +3,178 @@
 version = 3
 
 [[package]]
+name = "abc002"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "abc023"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc077"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc095"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "abc128"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "abc139"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc145"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc150"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc163"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "abc164"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "abc169"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc318"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
 name = "abc319"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc320"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc321"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc322"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc323"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc324"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc325"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc326"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc327"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc328"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "abc329"
 version = "0.1.0"
 dependencies = [
  "itertools",
@@ -19,10 +190,102 @@ dependencies = [
 ]
 
 [[package]]
+name = "ahc023"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+ "rand",
+]
+
+[[package]]
+name = "ahc024"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "ahc025"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+ "rand",
+]
+
+[[package]]
+name = "ahc026"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+ "rand",
+]
+
+[[package]]
+name = "arc054"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "arc165"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "arc166"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "arc167"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "arc168"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "cfg-if"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+
+[[package]]
 name = "either"
 version = "1.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a26ae43d7bcc3b814de94796a5e736d4029efb0ee900c12e2d54c993ad1a1e07"
+
+[[package]]
+name = "getrandom"
+version = "0.2.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fe9006bed769170c11f845cf00c7c1e9092aeb3f268e007c3e760ac68008070f"
+dependencies = [
+ "cfg-if",
+ "libc",
+ "wasi",
+]
 
 [[package]]
 name = "itertools"
@@ -32,6 +295,48 @@ checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
 dependencies = [
  "either",
 ]
+
+[[package]]
+name = "joi2007ho"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "joi2008ho"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "joi2008yo"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "joi2009ho"
+version = "0.1.0"
+dependencies = [
+ "itertools",
+ "proconio",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.150"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89d92a4743f9a61002fae18374ed11e7973f530cb3a3255fb354818118b2203c"
+
+[[package]]
+name = "ppv-lite86"
+version = "0.2.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b40af805b3121feab8a3c29f04d8ad262fa8e0561883e7653e024ae4479e6de"
 
 [[package]]
 name = "proc-macro2"
@@ -72,6 +377,57 @@ dependencies = [
 ]
 
 [[package]]
+name = "rand"
+version = "0.8.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
+dependencies = [
+ "libc",
+ "rand_chacha",
+ "rand_core",
+]
+
+[[package]]
+name = "rand_chacha"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88"
+dependencies = [
+ "ppv-lite86",
+ "rand_core",
+]
+
+[[package]]
+name = "rand_core"
+version = "0.6.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
+dependencies = [
+ "getrandom",
+]
+
+[[package]]
+name = "s8pc-4"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "s8pc-6"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
+name = "sumitrust2019"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
 name = "syn"
 version = "1.0.109"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -87,3 +443,9 @@ name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
+
+[[package]]
+name = "wasi"
+version = "0.11.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
