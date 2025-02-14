@@ -21,24 +21,31 @@ impl<T: PartialOrd + Clone> Heap<T> {
         self.heap.len()
     }
 
+    pub fn is_empty(&self) -> bool {
+        self.heap.is_empty()
+    }
+
+    fn swap(&mut self, index1: usize, index2: usize) {
+        self.heap.swap(index1, index2);
+    }
+
     pub fn insert(&mut self, value: T) {
         self.heap.push(value);
         let mut index = self.len() - 1;
         while index != 0 && self.heap[index] < self.heap[(index - 1) / 2] {
-            self.heap.swap(index, (index - 1) / 2);
+            self.swap(index, (index - 1) / 2);
             index = (index - 1) / 2;
         }
     }
 
-    fn push_down(&mut self) {
+    fn push_down(&mut self, mut index: usize) {
         let length = self.len();
         if length == 2 {
             if self.heap[0] > self.heap[1] {
-                self.heap.swap(0, 1);
+                self.swap(0, 1);
             }
             return;
         }
-        let mut index = 0;
 
         while 2 * index + 1 <= length - 1 {
             if 2 * index + 2 <= length - 1 {
@@ -54,10 +61,10 @@ impl<T: PartialOrd + Clone> Heap<T> {
                     }
                 {
                     if left_child < right_child {
-                        self.heap.swap(index, left_child_index);
+                        self.swap(index, left_child_index);
                         index = left_child_index;
                     } else {
-                        self.heap.swap(index, right_child_index);
+                        self.swap(index, right_child_index);
                         index = right_child_index;
                     }
                 } else {
@@ -67,7 +74,7 @@ impl<T: PartialOrd + Clone> Heap<T> {
                 let left_child_index = 2 * index + 1;
                 let left_child = self.heap[left_child_index].clone();
                 if self.heap[index] > left_child {
-                    self.heap.swap(index, left_child_index);
+                    self.swap(index, left_child_index);
                     index = left_child_index;
                 } else {
                     break;
@@ -76,12 +83,19 @@ impl<T: PartialOrd + Clone> Heap<T> {
         }
     }
 
+    fn move_upward(&mut self, mut index: usize) {
+        while index != 0 && self.heap[index] < self.heap[(index - 1) / 2] {
+            self.swap(index, (index - 1) / 2);
+            index = (index - 1) / 2;
+        }
+    }
+
     pub fn pop_min(&mut self) -> Option<T> {
         if let Some(last) = self.heap.pop() {
             if self.len() > 0 {
                 let min = self.heap[0].clone();
                 self.heap[0] = last;
-                self.push_down();
+                self.push_down(0);
                 Some(min)
             } else {
                 Some(last)
